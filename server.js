@@ -22,6 +22,6 @@ var emailController = require('./controllers/emailController.js');
 /**
  * Routes
  */
-app.post('/api/email', emailController.post);
+app.post('/email', emailController.post);
 
 module.exports = app;

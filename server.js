@@ -22,7 +22,7 @@ var emailController = require('./controllers/emailController.js');
 /**
  * Routes
  */
-app.post('/email', emailController.post);
+app.post('/api/email', emailController.post);
 
 /**
  * Initialize Express server

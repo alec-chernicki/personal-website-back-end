@@ -1,7 +1,6 @@
 const nodemailer = require('nodemailer');
 const mailgun = require('nodemailer-mailgun-transport');
 
-const nodemailerMailgun = nodemailer.createTransport(mailgun(auth));
 const EMAIL_ADDRESS = 'aleccortega@gmail.com';
 const EMAIL_SUBJECT_LINE = 'Contact Form | Personal Website';
 const DOMAIN = 'alecortega.com';
@@ -10,7 +9,8 @@ const auth = {
     api_key: process.env.MAILGUN_KEY,
     domain: DOMAIN
   }
-};
+};   
+const nodemailerMailgun = nodemailer.createTransport(mailgun(auth));
 
 exports.post  = function(req, res) {
   const sender = req.body.email;

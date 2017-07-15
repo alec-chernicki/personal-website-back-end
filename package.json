@@ -1,11 +1,11 @@
 {
-  "name": "personal-back-end",
+  "name": "server",
   "version": "1.0.0",
   "description": "The back-end for the personal website of Alec Ortega",
   "main": "server.js",
   "scripts": {
     "test": "test",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +13,7 @@
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "nodemailer": "^4.0.1",
-    "nodemailer-mailgun-transport": "^1.3.5"
+    "nodemailer-mailgun-transport": "^1.3.5",
+    "nodemon": "^1.11.0"
   }
 }
